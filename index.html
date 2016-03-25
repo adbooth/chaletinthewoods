@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Important meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- **CSS** -->
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Lightbox -->
+    <link href="css/lightbox.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- **JS** -->
+    <!-- JQuery -->
+    <script src="js/jquery.min.js" defer></script>
+    <!-- Boostrap -->
+    <script src="js/bootstrap.min.js" defer></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js" defer></script>
+    <!-- Lightbox -->
+    <script src="js/lightbox.js" defer></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/script.js" defer></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Page stuff -->
+    <title>Chalet in the Woods</title>
+    <link rel="icon" href="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Chalet in the Woods</h1>
+            <p class="lead">Nestled in mountains near the Pennsylvania Grand Canyon, Chalet in the Woods offers breathtaking views of the Pine Creek Valley not far from Wellsboro, PA.</p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button" onclick="put_contact()">Reserve Today!</a></p>
+        </div>
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div id="navbar">
+                    <ul class="nav navbar-nav">
+                        <li id="Home_nav-entry" class="nav-entry active"  onclick="put_scene(this)"><a href="#">Home</a></li>
+                        <li id="Pictures_nav-entry" class="nav-entry"  onclick="put_scene(this)"><a href="#">Pictures</a></li>
+                        <li id="Activites_nav-entry" class="nav-entry"  onclick="put_scene(this)"><a href="#">Activities</a></li>
+                        <li id="Rates_nav-entry" class="nav-entry"  onclick="put_scene(this)"><a href="#">Rates & Policies</a></li>
+                        <li id="Contact_nav-entry" class="nav-entry"  onclick="put_scene(this)"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div id="Home_scene" class="marketing scene">
+                <h2>About the Chalet</h2>
+                <p>Our Chalet in the Woods is a two story, two bathroom home on 15 acres with fabulous views joined on 2 sides by Tioga State Forest Land.</p>
+                <h2>Features</h2>
+                <div class="row marketing">
+                    <div class="col-sm-6">
+                        <ul>
+                            <li>2 master bedrooms (full sized beds)</li>
+                            <li>2 small bedrooms (full sized beds)</li>
+                            <li>Fully equipped kitchen with microwave</li>
+                            <li>Fireplace & electric heat</li>
+                            <li>Loft</li>
+                            <li>Skylights</li>
+                            <li>Cathedral ceilings</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <ul>
+                            <li>Covered deck with swing & large porch</li>
+                            <li>TV & DVD player</li>
+                            <li>Gas grill</li>
+                            <li>AT&T cell service</li>
+                            <li>Verizon texting service</li>
+                            <li>Linens not provided</li>
+                            <li>Children under 6 years old are not permitted</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="Pictures_scene" class="marketing scene hidden">
+                    <div class="row">
+                        <a href="images/fireplace-2.jpg" data-lightbox="gallery" class="col-sm-4">
+                            <img src="images/fireplace-2.jpg" class="img-responsive">
+                        </a>
+                        <a href="images/kitchen-1.jpg" data-lightbox="gallery" class="col-sm-4">
+                            <img src="images/kitchen-1.jpg" class="img-responsive">
+                        </a>
+                        <a href="images/inside-2.jpg" data-lightbox="gallery" class="col-sm-4">
+                            <img src="images/inside-2.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="row">
+                        <a href="images/outside-2-cropped.jpg" data-lightbox="gallery" class="col-sm-4">
+                            <img src="images/outside-2-cropped.jpg" class="img-responsive">
+                        </a>
+                        <a href="images/mb2-1.jpg" data-lightbox="gallery" class="col-sm-4">
+                            <img src="images/mb2-1.jpg" class="img-responsive">
+                        </a>
+                        <a href="images/mb1-1.jpg" data-lightbox="gallery" class="col-sm-4">
+                            <img src="images/mb1-1.jpg" class="img-responsive">
+                        </a>
+                    </div>
+            </div>
+            <div id="Activites_scene" class="marketing scene hidden">
+                <div class="row marketing">
+                    <div class="col-sm-6">
+                        <h4><a target="_blank" href="https://www.google.com/maps/search/restaurants+near+41.743893,-77.497733/@41.7492736,-77.5006256,2072m/data=!3m1!1e3">Nearby Restaurants</a></h4>
+                        <p>
+                            <ul>
+                                <li><a target="_blank" href="https://www.tripadvisor.com/Restaurant_Review-g53942-d1454834-Reviews-Log_Cabin_Inn_Restaurant-Wellsboro_Pennsylvania.html">Log Cabin Inn</a></li>
+                                <li><a target="_blank" href="http://www.oldantlers.com/">Old Antlers Inn</a></li>
+                                <li>Baxter's Bakery II</li>
+                            </ul>
+                        </p>
+
+                        <h4><a target="_blank" href="http://www.tyogacc.com/">Golf</a></h4>
+                        <p>Tyoga Country Club is the premiere golf course in Tioga County, Pennsylvania. Golf Digest has given this beautiful, scenic course four stars. Tyoga is located on Pine Creek Road, only two miles from the center of Historic Wellsboro.</p>
+
+                        <h4><a target="_blank" href="http://www.dcnr.state.pa.us/stateparks/findapark/leonardharrison/">Leonard Harrison State Park</a></h4>
+                        <p>On the east rim of the canyon, the 585-acre Leonard Harrison State Park has modern facilities, a visitor center and the most famous scenic views of the canyon. On the other side of the canyon is Colton Point State Park.</p>
+
+                        <h4><a target="_blank" href="http://tiogacentral.com/">Train Rides</a></h4>
+                        <p>Tioga Central Railroad - Pennsylvania's Most Scenic Excursion Railroad</p>
+
+                        <h4><a target="_blank" href="http://www.pinecrk.com/">Raft Trips, Canoe & Bike Rentals</a></h4>
+                        <p>Outdoor adventures in the Pennsylvania Grand Canyon</p>
+
+                        <h4><a target="_blank" href="http://agmap.psu.edu/Businesses/index.cfm?fid=3322">Horseback Riding</a></h4>
+                        <p>Professional horsback outfitter</p>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <h4><a target="_blank" href="http://pacanyon.com/">Pennsylvania Grand Canyon</a></h4>
+                        <p>Often referred to as the Grand Canyon of Pennsylvania and the Pine Creek Gorge, the PA Canyon area stretches for over 45 miles with depths of nearly 1500 feet. It's dynamic topography creates many scenic wonders, including steep canyon walls and waterfalls.</p>
+
+                        <h4><a target="_blank" href="http://www.visittiogapa.com/railtrail.html">Pine Creek Trail</a></h4>
+                        <p>A jewel of the Gorge is the Pine Creek Rail Trail voted by USA Today as one of the "10 great places to take a bike tour."</p>
+
+                        <h4><a target="_blank" href="http://www.dcnr.state.pa.us/stateparks/findapark/coltonpoint/">Colton Point</a></h4>
+                        <p>On the west rim of Pine Creek Gorge, the Pennsylvania Grand Canyon, the 368-acre Colton Point State Park resonates with the rustic charm of the Civilian Conservation Corps era of the 1930s. The rugged overlooks offer great views of the canyon. On the other side of the canyon is Leonard Harrison State Park.</p>
+
+                        <h4><a target="_blank" href="http://lumbermuseum.org/">Pennsylvania Lumber Museum</a></h4>
+                        <p>The Pennsylvania Lumber Museum educates the public about the Commonwealth’s rich lumbering history and the ongoing care, management, and recreational use of its forests. Visitors are encouraged to explore the museum’s working historic saw mill, recreated lumber camp, exhibits, public programs and collections to discover the relevance of history in their lives.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="Rates_scene" class="marketing scene hidden">
+                <h2><a href="#" onclick="put_contact()">Call</a> for current rates</h2>
+                <p>$100 per additional person per week. $50 per additional person per 3 day stay.</p>
+                <div class="row marketing">
+                    <div class="col-sm-6">
+                        <h3>Terms</h3>
+                        <ul>
+                            <li>Check in after 3:00pm</li>
+                            <li>Check out after 10:00am</li>
+                            <li>Maximum capacity is 6</li>
+                            <li>Cabin is no smoking</li>
+                            <li>Leave pets at home</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3>Cancellations</h3>
+                        <p>
+                            <ul>
+                                <li>3 months or less prior to reservation</li>
+                                <li>Refunds made if cancelled time is reserved</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="Contact_scene" class="marketing scene hidden">
+                <h2>Contact Information</h2>
+                <p>For reservations, call Flossie Comstock at 570-724-3796.</p>
+                <h3>Location</h3>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m11!1m3!1d490.3526055764381!2d-77.49787100000007!3d41.744115482030786!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1458868098227" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

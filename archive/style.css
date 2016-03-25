@@ -1,0 +1,11 @@
+.links {
+	font-family: "Bodoni MT", serif;
+	text-decoration: blink;
+}
+a:link {
+	font-family: "Bodoni MT", serif;
+	color: #333300;
+}
+a:visited {
+	color: #000000;
+}
