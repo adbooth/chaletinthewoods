@@ -12,15 +12,12 @@ function put_scene(elem){
     // Make scene active
     nav_entry.addClass('active');
     scene.removeClass('hidden');
-
-    var jumbotron = document.getElementsByClassName('jumbotron')[0];
-    var scrollY = jumbotron.offsetTop + jumbotron.offsetHeight;
-
-    setTimeout(function(){
-        window.scrollTo(0, scrollY);
-    }, 1);
 }
 
 function put_contact(){
     put_scene(document.getElementById('Contact_scene'));
+}
+
+function put_about(){
+    put_scene(document.getElementById('Home_scene'));
 }

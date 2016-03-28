@@ -5,7 +5,6 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
     background: AntiqueWhite;
-    /*font-family: serif;*/
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -48,13 +47,16 @@ body {
 
 .jumbotron {
     background: black;
-    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/header-cropped.jpg) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./images/cabin_closeup.jpg) no-repeat;
     background-size: 100%;
 
-    font-family: fantasy;
+    font-family: cursive;
     color: white;
     text-align: center;
     border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron p {
+    font-family: fantasy;
 }
 .jumbotron .btn {
     padding: 14px 24px;
@@ -62,11 +64,10 @@ body {
     font-family: sans-serif;
     color: white;
     text-shadow: none;
-    margin-bottom: 0px;
+    margin-bottom: -20px;
 }
 nav {
     font-family: sans-serif;
-    margin-top: -20px;
 }
 .scene {
     margin-top:-5px;
@@ -91,6 +92,18 @@ nav {
     .jumbotron {
         border-bottom: 0;
     }
+}
+
+.navbar-brand {
+    font-family: cursive;
+}
+
+.gallery-row {
+    padding-bottom: 1em;
+}
+.gallery-row img {
+    border-radius: 4px;
+    border: 2px solid white;
 }
 
 iframe {
