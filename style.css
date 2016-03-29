@@ -1,38 +1,11 @@
 /* css/style.css */
 
-/* Space out content a bit */
-body {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background: AntiqueWhite;
-}
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-/* Custom page header */
-.header {
-    padding-bottom: 20px;
-    border-bottom: 1px solid #e5e5e5;
-    margin-botom: 0px;
-}
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-}
-
-/* Custom page footer */
-.footer {
-    padding-top: 19px;
-    color: #777;
-    border-top: 1px solid #e5e5e5;
+/* Blocks that came with the template */
+@media screen and (min-width: 768px) {
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
 }
 
 /* Customize container */
@@ -41,10 +14,14 @@ body {
         max-width: 730px;
     }
 }
-.container-narrow > hr {
-    margin: 30px 0;
-}
 
+/* Custom styling */
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: AntiqueWhite;
+}
+/* Jumbotron */
 .jumbotron {
     background: black;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./images/cabin_closeup.jpg) no-repeat;
@@ -66,38 +43,19 @@ body {
     text-shadow: none;
     margin-bottom: -20px;
 }
+
+/* Nav */
 nav {
     font-family: sans-serif;
 }
-.scene {
-    margin-top:-5px;
-}
-.marketing p + h4 {
-    margin-top: 28px;
-}
-
-@media screen and (min-width: 768px) {
-    /* Remove the padding we set earlier */
-    .header,
-    .marketing,
-    .footer {
-        padding-right: 0;
-        padding-left: 0;
-    }
-    /* Space out the masthead */
-    .header {
-        margin-bottom: 30px;
-    }
-    /* Remove the bottom border on the jumbotron for visual effect */
-    .jumbotron {
-        border-bottom: 0;
-    }
-}
-
 .navbar-brand {
     font-family: cursive;
 }
 
+/* Scenes */
+.scene {
+    margin-top:-5px;
+}
 .gallery-row {
     padding-bottom: 1em;
 }
@@ -105,7 +63,6 @@ nav {
     border-radius: 4px;
     border: 2px solid white;
 }
-
 iframe {
     width: 100%;
 }
