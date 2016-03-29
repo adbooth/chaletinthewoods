@@ -21,3 +21,15 @@ function put_contact(){
 function put_about(){
     put_scene(document.getElementById('Home_scene'));
 }
+
+$(function(){
+    // Add raised photo effect on mouseover
+    $('.gallery-row img').hover(function(){
+        // Mouse over
+        $(this).addClass('raised-photo');
+    }, function(){
+        // Mouse off
+        $(this).removeClass('raised-photo');
+    });
+
+});

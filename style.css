@@ -63,6 +63,10 @@ nav {
     border-radius: 4px;
     border: 2px solid white;
 }
+.raised-photo {
+    box-shadow: 1px 3px 10px black;
+    transition: all 0.2s linear;
+}
 iframe {
     width: 100%;
 }
