@@ -66,14 +66,15 @@
 
         <div id="Home_scene" class="scene">
             <div class="jumbotron">
-                <h1>Chalet in the Woods</h1>
+                <h1 class="hidden-xs">Chalet in the Woods</h1>
+                <h1 class="visible-xs-block"><a href="#" onclick="put_contact()">Chalet in the Woods</a></h1>
                 <p class="hidden-xs">Nestled in mountains near the Pennsylvania Grand Canyon, Chalet in the Woods offers breathtaking views of the Pine Creek Valley not far from Wellsboro, PA.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button" onclick="put_contact()">Reserve Today!</a></p>
+                <p><a class="btn btn-lg btn-primary hidden-xs" href="#" role="button" onclick="put_contact()">Reserve Today!</a></p>
             </div>
 
             <div class="row">
                 <div class="col-xs-12">
-                    <h2>About the Chalet</h2>
+                    <h2>The Chalet</h2>
                     <p>Our Chalet in the Woods is a two story, two bathroom home on 15 acres with fabulous views joined on 2 sides by Tioga State Forest Land.</p>
                     <p class="visible-xs-block">Nestled in mountains near the Pennsylvania Grand Canyon, Chalet in the Woods offers breathtaking views of the Pine Creek Valley not far from Wellsboro, PA.</p>
                     <h2>Features</h2>
@@ -81,7 +82,7 @@
             </div>
 
             <div class="row">
-                <div class="col-xs-6">
+                <div class="col-sm-6">
                     <ul>
                         <li>2 master bedrooms (full sized beds)</li>
                         <li>2 small bedrooms (full sized beds)</li>
@@ -92,7 +93,7 @@
                     </ul>
                 </div>
 
-                <div class="col-xs-6">
+                <div class="col-sm-6">
                     <ul>
                         <li>Skylights</li>
                         <li>Cathedral ceilings</li>
@@ -107,22 +108,22 @@
 
         <div id="Pictures_scene" class="scene hidden">
             <div class="row gallery-row">
-                <div class="col-xs-3">
+                <div class="col-sm-3">
                     <a href="./images/diving_dock_to_house.jpg" data-lightbox="gallery" data-title="Diving dock">
                         <img src="./images/diving_dock_to_house.jpg" class="img-responsive">
                     </a>
                 </div>
-                <div class="col-xs-3">
+                <div class="col-sm-3">
                     <a href="./images/pond_to_house.jpg" data-lightbox="gallery" data-title="Chalet from a pond">
                         <img src="./images/pond_to_house.jpg" class="img-responsive">
                     </a>
                 </div>
-                <div class="col-xs-3">
+                <div class="col-sm-3">
                     <a href="./images/cabin_closeup.jpg" data-lightbox="gallery" data-title="Chalet closeup">
                         <img src="./images/cabin_closeup.jpg" class="img-responsive">
                     </a>
                 </div>
-                <div class="col-xs-3">
+                <div class="col-sm-3">
                     <a href="./images/foggy_pond.jpg" data-lightbox="gallery" data-title="View from the Chalet">
                         <img src="./images/foggy_pond.jpg" class="img-responsive">
                     </a>
@@ -130,22 +131,22 @@
             </div>
 
             <div class="row gallery-row">
-                <div class="col-xs-3">
+                <div class="col-sm-3">
                     <a href="./images/master_bed.jpg" data-lightbox="gallery" data-title="Master bedroom">
                         <img src="./images/master_bed.jpg" class="img-responsive">
                     </a>
                 </div>
-                <div class="col-xs-3">
+                <div class="col-sm-3">
                     <a href="./images/second_bed.jpg" data-lightbox="gallery" data-title="Other upstairs bed">
                         <img src="./images/second_bed.jpg" class="img-responsive">
                     </a>
                 </div>
-                <div class="col-xs-3">
+                <div class="col-sm-3">
                     <a href="./images/loft.jpg" data-lightbox="gallery" data-title="Loft">
                         <img src="./images/loft.jpg" class="img-responsive">
                     </a>
                 </div>
-                <div class="col-xs-3">
+                <div class="col-sm-3">
                     <a href="./images/downstairs_bed.jpg" data-lightbox="gallery" data-title="Downstairs bed">
                         <img src="./images/downstairs_bed.jpg" class="img-responsive">
                     </a>
@@ -153,17 +154,22 @@
             </div>
 
             <div class="row gallery-row">
-                <div class="col-xs-4">
+                <div class="col-sm-3">
                     <a href="./images/living_room.jpg" data-lightbox="gallery" data-title="Living room">
                         <img src="./images/living_room.jpg" class="img-responsive">
                     </a>
                 </div>
-                <div class="col-xs-4">
+                <div class="col-sm-3">
+                    <a href="./images/living_space.jpg" data-lightbox="gallery" data-title="Living space">
+                        <img src="./images/living_space.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-3">
                     <a href="./images/kitchen.jpg" data-lightbox="gallery" data-title="Kitchen">
                         <img src="./images/kitchen.jpg" class="img-responsive">
                     </a>
                 </div>
-                <div class="col-xs-4">
+                <div class="col-sm-3">
                     <a href="./images/fireplace.jpg" data-lightbox="gallery" data-title="Fireplace">
                         <img src="./images/fireplace.jpg" class="img-responsive">
                     </a>
@@ -171,22 +177,30 @@
             </div>
 
             <div class="row gallery-row">
-                <div class="col-xs-3">
+                <div class="col-sm-12">
+                    <a href="./images/porch_pano.jpg" data-lightbox="gallery" data-title="Panoramic view from the porch">
+                        <img src="./images/porch_pano.jpg" class="img-responsive">
+                    </a>
+                </div>
+            </div>
+
+            <div class="row gallery-row">
+                <div class="col-sm-3">
                     <a href="./images/cabin_longshot.jpg" data-lightbox="gallery" data-title="Cabin from afar">
                         <img src="./images/cabin_longshot.jpg" class="img-responsive">
                     </a>
                 </div>
-                <div class="col-xs-3">
+                <div class="col-sm-3">
                     <a href="./images/jumping_dock.jpg" data-lightbox="gallery" data-title="Diving dock">
                         <img src="./images/jumping_dock.jpg" class="img-responsive">
                     </a>
                 </div>
-                <div class="col-xs-3">
+                <div class="col-sm-3">
                     <a href="./images/sitting_dock.jpg" data-lightbox="gallery" data-title="Sitting dock">
                         <img src="./images/sitting_dock.jpg" class="img-responsive">
                     </a>
                 </div>
-                <div class="col-xs-3">
+                <div class="col-sm-3">
                     <a href="./images/aerial.jpg" data-lightbox="gallery" data-title="Aerial view of the Chalet and the ponds">
                         <img src="./images/aerial.jpg" class="img-responsive">
                     </a>
@@ -194,22 +208,14 @@
             </div>
 
             <div class="row gallery-row">
-                <div class="col-xs-12">
+                <div class="col-sm-6">
                     <a href="./images/pond_pano.jpg" data-lightbox="gallery" data-title="Pond panoramic">
                         <img src="./images/pond_pano.jpg" class="img-responsive">
                     </a>
                 </div>
-            </div>
-
-            <div class="row gallery-row">
-                <div class="col-xs-7">
-                    <a href="./images/porch_pano_small.jpg" data-lightbox="gallery" data-title="Panoramic view from the porch">
-                        <img src="./images/porch_pano_small.jpg" class="img-responsive">
-                    </a>
-                </div>
-                <div class="col-xs-5">
-                    <a href="./images/pine_creek.jpg" data-lightbox="gallery" data-title="View of Pine Creek">
-                        <img src="./images/pine_creek.jpg" class="img-responsive">
+                <div class="col-sm-6">
+                    <a href="./images/pond_pano_winter.jpg" data-lightbox="gallery" data-title="Pond panoramic">
+                        <img src="./images/pond_pano_winter.jpg" class="img-responsive">
                     </a>
                 </div>
             </div>
@@ -217,7 +223,7 @@
 
         <div id="Activites_scene" class="scene hidden">
             <div class="row">
-                <div class="col-xs-6">
+                <div class="col-sm-6">
                     <h4><a target="_blank" href="https://www.google.com/maps/search/restaurants+near+41.743893,-77.497733/@41.7492736,-77.5006256,2072m/data=!3m1!1e3">Nearby Restaurants</a></h4>
                     <ul>
                         <li><a target="_blank" href="https://www.facebook.com/thelogcabininn/timeline">Log Cabin Inn</a></li>
@@ -241,7 +247,7 @@
                     <p>Outdoor adventures in the Pennsylvania Grand Canyon</p>
                 </div>
 
-                <div class="col-xs-6">
+                <div class="col-sm-6">
                     <h4><a target="_blank" href="http://pacanyon.com/">Pennsylvania Grand Canyon</a></h4>
                     <p>Often referred to as the Grand Canyon of Pennsylvania and the Pine Creek Gorge, the PA Canyon area stretches for over 45 miles with depths of nearly 1500 feet. It's dynamic topography creates many scenic wonders, including steep canyon walls and waterfalls.</p>
 
@@ -262,14 +268,14 @@
 
         <div id="Rates_scene" class="scene hidden">
             <div class="row">
-                <div class="col-xs-12">
+                <div class="col-sm-12">
                     <h2><a href="#" onclick="put_contact()">Call for current rates</a></h2>
                     <p>$100 per additional person per week. $50 per additional person per 3 day stay.</p>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-xs-6">
+                <div class="col-sm-6">
                     <h3>Terms</h3>
                     <ul>
                         <li>Check in after 3:00pm</li>
@@ -282,7 +288,7 @@
                     </ul>
                 </div>
 
-                <div class="col-xs-6">
+                <div class="col-sm-6">
                     <h3>Cancellations</h3>
                     <ul>
                         <li>3 months or less prior to reservation</li>
@@ -294,14 +300,14 @@
 
         <div id="Contact_scene" class="row scene hidden">
             <div class="row">
-                <div class="col-xs-12">
+                <div class="col-sm-12">
                     <h2>Contact Information</h2>
                     <p>For reservations, call Flossie Comstock at <strong>570-724-3796</strong>.</p>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-xs-12">
+                <div class="col-sm-12">
                     <h3>Location</h3>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m11!1m3!1d490.27179483248113!2d-77.49787346529881!3d41.74411070801247!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1459191809189" width="600" height="450" style="border:0" allowfullscreen></iframe>
                 </div>
